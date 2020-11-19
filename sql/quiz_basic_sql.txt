@@ -1,0 +1,347 @@
+conn system/1234;
+
+create user heidi identified by 1234;
+
+grant connect, resource to heidi;
+
+conn heidi/1234;
+
+drop table chapter_2 cascade constraints;
+drop sequence ch_2_seq;
+
+
+create table chapter_2 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_2_seq start with 1 increment by 1;
+
+
+drop table chapter_3 cascade constraints;
+drop sequence ch_3_seq;
+
+create table chapter_3 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_3_seq start with 1 increment by 1;
+
+
+drop table chapter_4 cascade constraints;
+drop sequence ch_4_seq;
+
+create table chapter_4 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_4_seq start with 1 increment by 1;
+
+
+drop table chapter_5 cascade constraints;
+drop sequence ch_5_seq;
+
+create table chapter_5 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_5_seq start with 1 increment by 1;
+
+
+drop table chapter_6 cascade constraints;
+drop sequence ch_6_seq;
+
+create table chapter_6 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_6_seq start with 1 increment by 1;
+
+
+drop table chapter_7 cascade constraints;
+drop sequence ch_7_seq;
+
+create table chapter_7 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_7_seq start with 1 increment by 1;
+
+
+//   챕터 6은 생성만해놨고, 챕터7은 데이터까지 다 넣어놨음
+
+drop table chapter_8 cascade constraints;
+drop sequence ch_8_seq;
+
+create table chapter_8 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_8_seq start with 1 increment by 1;
+
+
+drop table chapter_9 cascade constraints;
+drop sequence ch_9_seq;
+
+
+create table chapter_9 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_9_seq start with 1 increment by 1;
+
+
+drop table chapter_10 cascade constraints;
+drop sequence ch_10_seq;
+
+create table chapter_10 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_10_seq start with 1 increment by 1;
+
+
+
+drop table chapter_11 cascade constraints;
+drop sequence ch_11_seq;
+
+create table chapter_11 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_11_seq start with 1 increment by 1;
+
+
+
+drop table chapter_12 cascade constraints;
+drop sequence ch_12_seq;
+
+create table chapter_12 (
+	no number(4) not null,
+	question varchar2(400) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_12_seq start with 1 increment by 1;
+
+
+
+drop table chapter_13 cascade constraints;
+drop sequence ch_13_seq;
+
+
+create table chapter_13 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(150) not null,
+	example2 varchar2(150) not null,
+	example3 varchar2(150) not null,
+	example4 varchar2(150) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_13_seq start with 1 increment by 1;
+
+create table chapter_14 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_14_seq start with 1 increment by 1;
+
+create table chapter_15 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_15_seq start with 1 increment by 1;
+
+create table chapter_16 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_16_seq start with 1 increment by 1;
+
+create table chapter_17 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_17_seq start with 1 increment by 1;
+
+create table chapter_18 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_18_seq start with 1 increment by 1;
+
+create table chapter_19 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar2(1000) not null,
+	primary key(no)
+);
+
+create sequence ch_19_seq start with 1 increment by 1;
+
+create table chapter_20 (
+	no number(4) not null,
+	question varchar2(300) not null,
+	image varchar2(100),
+	example1 varchar2(100) not null,
+	example2 varchar2(100) not null,
+	example3 varchar2(100) not null,
+	example4 varchar2(100) not null,
+	answer varchar2(150) not null,
+	solution varchar210500) not null,
+	primary key(no)
+);
+
+create sequence ch_20_seq start with 1 increment by 1;

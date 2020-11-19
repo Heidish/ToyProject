@@ -1,0 +1,442 @@
+<  chapter_2 테이블 데이터  >
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '아래 보기 중 일반적으로 URL을 구성하는 것에 포함되지 않는 것은 무엇인가?', '프로토콜', '로그', '서버이름', '경로', '로그', 'URL의 일반적인 구성은 프로토콜, 서버이름, 경로, 쿼리문자열의 4 개의 주요 구성 요소로 구성된다. 예를 들어 https://heidish.tistory.com/10?category=880883 과 같은 URL 주소가 있을 때, http는 기본 프로토콜이며 heidish.tistory.com은 도메인, 10은 경로, 물음표 뒤의 category=880883은 쿼리문자열이 된다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, 'URL 주소에서 프로토콜과 나머지 부분을 구분하기 위해 사용되는것은 다음 중 무엇인가?', '?', ':/', '::/', '://', '://', '프로토콜 이름과 서버 이름 사이에 위치한 :// 는 프로토콜과 나머지 부분을 구분하기 위해 사용된다. URL 을 좀 더 범용적으로 정의한 URI도 있는데, URL과 URI에 대한 내용은 각각 http://ko.wikipedia.org/wiki/URL 과 http://goo.gl/1gNfgx 페이지를 참고하기 바란다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, 'URL의 서버 이름이 위치하는 자리에 도메인명이 오는 경우, 이 도메인 명을 IP 주소로 변환시키는 것을 DNS라고 한다. 다음 중 DNS를 가리키는 것은 무엇인가?', 'Domain Name Solution', 'Domain NextTo Servlet', 'Domain Name Server', 'Domain Name Servlet', 'Domain Name Server', '웹 브라우저와 웹 서버는 IP 주소를 이용해서 연결하기 때문에 도메인 이름을 IP 주소로 변환할 필요가 있는데, 이 때 사용하는 것이 바로 DNS(Domain Name Server)이다. 웹 브라우저에서 URL을 입력하면, 웹 브라우저는 도메인 이름에 해당하는 IP 주소를 DNS에 요정하고, DNS는 IP 주소를 응답으로 제공한다. DNS로부터 IP 주소를 받으면, 웹 브라우저는 IP 주소를 이용해서 웹 서버에 연결한 뒤 URL에 해당하는 웹 페이지를 요청하고, 웹 페이지를 응답으로 받게 된다.');
+
+insert into chapter_2 values (
+ch_2_seq.nextval, '아래 그림은 웹 브라우저와 웹 서버의 통신 과정을 그림으로 나타낸 것이며 화살표의 기호 a-d는 통신 과정이다. 통신 과정의 순서에 맞게 a-d를 나열한 것을 고르시오.', 'ch_2_4.jpg', 'd - b - a - c', 'd - a - b - c', 'a - c - d - b', 'a - d - c - b', 'a - c - d - b', '(a) : 가장 먼저 웹 브라우저가 DNS에게 도메인 이름에 해당하는 IP 주소를 요청한다. (c) : DNS가 웹 브라우저에게 IP 주소를 응답으로 제공한다. (d) : IP 주소를 이용해서 웹 브라우저가 웹 서버에 연결하고, URL에 해당하는 웹 페이지를 요청한다. (b) : 웹 브라우저가 웹 서버로부터 웹 페이지를 응답받는다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '각 서버 프로그램은 클라이언트가 연결할 때 다른 서버 프로그램과 구분이 가능하도록 포트(port) 라는 것을 사용한다. 다음 중 포트에 대한 설명 중 틀린 것을 고르시오.', '포트는 숫자로 된 번호로서 서버 프로그램마다 구분되는 포트 번호를 사용한다.', 'Tomcat은 9000, mySQL은 3306, Oracle은 8080번을 사용한다.', '클라이언트는 포트번호만을 사용해서 원하는 서버 프로그램에 연결한다.', '포트번호의 범위는 0~1000번 사이의 숫자로 운영체계가 기본적으로 정하는 범위이다.', '클라이언트는 포트번호만을 사용해서 원하는 서버 프로그램에 연결한다.', '포트는 숫자로 된 번호로서 서버 프로그램마다 구분되는 포트 번호를 사용하며, 클라이언트는 IP 주소와 함께 포트 번호를 사용해서 원하는 서버 프로그램에 연결하게 된다. 예를 들면 http://localhost:9000/index.jsp 와 같이 콜론(:) 다음에 위치한 9000이 포트 번호가 된다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '이것은 동적 페이지를 작성하는데 사용되는 자바의 표준 기술로서, HTML 응답 뿐 아니라 XML, JSON, 바이너리 파일 등의 응답을 생성하는데 필요한 기능을 제공한다. 이것은 무엇인가?', 'DNS', 'HTTP', 'WAS', 'JSP', 'JSP', '문제의 설명은 JSP(Java Server Pages)의 설명이다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '이것은 Tomcat, Jetty, JBoss EAP 와 같은 서버 프로그램을 말한다. 이것은 웹 브라우저로부터 요청이 오면 알맞은 프로그램을 찾아 실행하고, 프로그램의 실행 결과를 응답으로 전송한다. 이것은 무엇인가?', 'WAS', '동적페이지', 'fmt', 'Servlet', 'WAS', '문제는 WAS(Web Application Server)에 대한 설명이다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '웹 브라우저와 웹 서버는 이것을 이용해서 데이터를 주고받는다. 이것에는 요청규칙(request)과 응답규칙(response)이 있다. 이것은 무엇인가?', 'DNS', 'Server', 'HTTP', 'port', 'HTTP', '웹 브라우저와 웹 서버는 HTTP(HyperText Transfer Protocol)를 이용해서 데이터를 주고받는다. 이는 HTML을 비롯해 이미지, 동영상, XML 문서 등의 데이터를 주고받을 때 사용하는 일종의 규칙이다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, '일반적으로 네트워크 프로그램에서 요청하는 쪽을 ( A ) 라고 부르고, 요청을 받아 알맞은 기능이나 데이터를 제공하는 쪽을 ( B ) 라고 부른다. A와 B에 들어갈 용어를 각각 순서대로 알맞게 나열한 것은?', 'A : 클라이언트 - B : 서버', 'A : 서버 - B : 클라이언트', 'A : 포트번호 - B : DNS', 'A : DNS - B : 포트번호', 'A : 클라이언트 - B : 서버', '일반적으로 네트워크 프로그램에서 요청하는 쪽을 클라이언트(Client) 라고 부르고, 요청을 받아 알맞은 기능이나 데이터를 제공하는 쪽을 서버(Server) 라고 부른다. 웹 브라우저는 HTML 문서나 이미지 등을 요청하므로 클라이언트에 해당하고, 웹 서버는 이름에서 유추할 수 있듯이 서버에 해당된다. 또한 서버 프로그램이 실행되는 컴퓨터를 서버라고 부르기도 한다.');
+
+insert into chapter_2 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_2_seq.nextval, 'HTML 문서를 받은 웹 브라우저가 HTML 표준에 따라 HTML 문서로부터 알맞은 화면을 생성하는 과정을 ___ 이라고 한다. 이것은 무엇인가?', 'markup', 'tranlation', 'transfer', 'rendring', 'rendering', 'HTML(HyperText Markup Language) 문서를 받은 웹 브라우저가 HTML 표준에 따라 HTML 문서로부터 알맞은 화면을 생성하는 과정을 렌더링(rendering) 이라고 한다');
+
+
+
+<  chapter_3 테이블 데이터  >
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'JSP 페이지의 구성 요소 중, JSP 페이지에 대한 설정 정보를 지정해줄 때 사용하는 Directive(디렉티브)가 아닌것을 고르시오.', 'exclude', 'include', 'taglib', 'page', 'exclude', 'JSP 페이지의 구성 요소 중 Directive(디렉티브)는 JSP 페이지에 대한 설정 정보를 지정해줄 때 사용한다. 이는 페이지 지시자 라고도 부르며, JSP 가 제공하는 디렉티브 3 가지는 page, taglib, include 이다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'JSP의 구성요소 중 스크립트 요소는 JSP 에서 문서의 내용을 동적으로 생성하기 위해 사용된다. 다음 중 스크립트 요소와 가장 거리가 먼 것을 고르시오.', 'Expression(표현식) : 값을 출력한다. <%=  %>', 'Scriptlet(스크립트릿) : 자바코드를 실행한다. <%  %>', 'Declaration(선언부) : 자바메소드(함수)를 생성한다. <%!  %>', 'Directive(디렉티브) : 페이지의 설정 정보를 지정한다. <%@  %>', 'Directive(디렉티브) : 페이지의 설정 정보를 지정한다. <%@  %>', 'Expression, Scriptlet, Declaration 세 가지는 스크립트 요소에 속하지만, Directive는 이에 속하지 않는 개별적인 JSP 페이지 구성요소이다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'JSP 페이지를 구성하는 요소 중, 커스텀 태그의 일부로 자주 사용하는 것들을 별도로 표준화한 태그 라이브러리는 무엇인가?', 'Action Tag', 'Application', 'MIME', 'JSTL', 'JSTL', '문제는 JSTL(JavaServer Pages Standard Tag Library) 즉 표준태그라이브러리에 대한 설명이다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, '아래의 보기에서 page Directive의 속성 중 하나인 contentType 속성에 대한 설명으로 옳은 것을 고르시오.', 'contentType 속성은 JSP 페이지가 생성할 문서의 타입을 지정한다.', 'contentType 속성은 어떤 값을 출력 결과에 포함시키고자 할 때 사용한다.', 'contentType 속성은 JSP 페이지에 대한 정보를 입력하기 위해 사용한다.', 'contentType 속성은 공백처리를 해주는 속성이다.', 'contentType 속성은 JSP 페이지가 생성할 문서의 타입을 지정한다.', 'contentType 속성은 JSP 페이지가 생성할 문서의 타입을 지정한다. 이는 JSP가 생성할 문서의 MIME 타입을 입력하는데 주로 기본값인 text/html 을 사용한다. 해당 속성의 charset 값은 생략 가능하다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, '다음은 웹 어플리케이션 프로그래밍을 하는데 필요한 기능을 제공해주는 기본객체(implicit object)들이다. 이 중 객체의 이름과 설명이 잘못 짝지어진 것을 고르시오.', 'request : 외부로부터 요청 파라미터를 읽어오는 객체', 'session : 웹 브라우저의 요청 시 요청한 웹 브라워저에 관한 정보를 저장하고 관리하는 객체', 'application : 웹 어플리케이션의 설정 정보를 갖는 page 와 관련이 있는 객체',  'page : JSP 페이지 그 자체를 나타내는 객체', 'application : 웹 어플리케이션의 설정 정보를 갖는 page 와 관련이 있는 객체', 'aaplication 객체는 웹 어플리케이션의 설정 정보를 갖는 context 와 관련이 있는 객체로, 웹 어플리케이션과 연관이 있다. application 객체는 웹 어플리케이션이 실행되는 서버의 설정 정보 및 자원에 대한 정보를 얻어내거나 어플리케이션이 실행되고 있는 동안에 발생할 수 있는 이벤트 로그 정보와 관련된 기능들을 제공한다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'page Directive의 주요 속성 중 출력 버퍼가 다 찼을 경우 자동으로 버퍼에 있는 데이터를 출력 스트림으로 보내고 비울지의 여부를 boolean 값으로 나타내는 속성은 무엇인가?', 'buffer', 'info', 'autoFlush', 'isELIgnored', 'autoFlush', 'autoFlush 속성은 출력 버퍼가 다 찼을 경우 자동으로 버퍼에 있는 데이터를 출력 스트림으로 보내고 비울지의 여부를 boolean 값으로 나타낸다. 기본값은 true 이며, true인 경우 버퍼의 내용을 웹 브라우저에 보낸 후 버퍼를 비우고 false인 경우 IOException 에서를 발생시킨다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'request 기본 객체는 JSP 페이지에서 가장 많이 사용되는 기본 객체로서 웹 브라우저의 요청과 관련이 있다. 다음 중 request 기본 객체가 제공하는 기능과 가장 먼 것을 고르시오.', '클라이언트(웹 브라우저)와 관련된 정보 읽기 기능', '서버와 관련된 정보 읽기 기능', '클라이언트에게 응답을 전송하는 기능', '클라이언트가 전송한 요청 파라미터 읽기 기능', '클라이언트에게 응답을 전송하는 기능', '클라이언트에게 응답을 전송하는 기능은 request 기본 객체의 기능이 아니다. 보기의 기능들 외에도 request 기본 객체는 클라이언트가 전송한 요청 헤더 읽기 기능, 클라이언트가 전송한 쿠키 읽기 기능, 속성 처리 가능 등이 있다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'request 기본 객체는 웹 브라우저가 전송한 파라미터를 읽어올 수 있는 메서드를 제공한다. 다음의 request 기본 객체의 파라미터 읽기 메서드 중 그 설명이 옳지 않은 것은?', 'getParameter(String name) : 이름이 name인 파라미터값을 구하며 존재하지 않을경우 IOException 에러가 발생한다.', 'getParameterValued(String name) : 이름이 name인 모든 파라미터값을 배열로 구한다. 존재하지 않을경우 null값을 리턴한다.', 'getParameterNames() : 웹 브라우저가 전송한 파라미터의 이름 목록을 구한다.', 'getParameterMap() : 웹 브라우저가 전송한 파라미터의 맵을 구한다. 맵은 <파라미텨, 값> 쌍으로 구성된다.', 'getParameter(String name) : 이름이 name 인 파라미터 값을 구한다. 존재하지 않을 경우 IOException 에러가 발생한다.', 'getParameter(String name) 메서드는 이름이 name 인 파라미터 값을 구하며, 해당 파라미터 값이 존재하지 않을 경우 null 값을 리턴한다. 에러는 발생하지 않는다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, 'response 기본 객체에서 많이 사용되는 기능 중 하나로, 웹 서버가 웹 브라우저에게 다른 페이지로 이동하라고 응답하는 기능은 다음 중 무엇인가?', '<a> 태그의 링크 기능', 'getHeader() 메서드', 'getContextPath() 메소드', 'sendRedirect() 메서드', 'sendRedirect() 메서드', 'response 객체는 sendRedirect() 메서드를 사용해서 웹 브라우저가 리다이렉트 하도록 지시할 수 있다.');
+
+insert into chapter_3 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_3_seq.nextval, '다음 중 주석 처리 방식에 대한 설명이 옳지 않은 것은?', '자바코드의 경우 // 를 사용한다.', '자바코드의 경우 /**  **/를 사용한다.', 'JSP 코드의 경우 <!--  --!>를 사용한다.', 'JSP 코드의 경우 <%--  --%>를 사용한다.', 'JSP 코드의 경우 <!--  --!>를 사용한다.', 'JSP 코드에서 주석처리를 할 때 CTRL+SHIFT+C 또는 <%--  --%>를 사용한다.');
+
+
+
+<  chapter_4 테이블 데이터  >
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'JSP페이지를 요청할 때 JSP를 직접 실행하는것이 아닌, JSP를 자바소스 코드로 변환한 뒤 컴파일과정을 거쳐 생성한 서블릿을 실행하는데, 여기서 JSP 페이지를 자바코드로 변경하는 단계를( A )단계라고 하며, 자바코드를 서블릿 클래스로 변경하는 단계를( B )단계 라고 한다. A와 B는 무엇인가?', 'transfer-transit', 'translation-transit', 'translation-compile', 'transit-compile', 'translation-compile', 'JSP페이지를 자바코드로 변경하는 단계를 translation 단계라고 하며, 자바코드를 서블릿 클래스로 변경하는 단계를 compile 단계라고 한다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'JSP 페이지는 응답 결과를 곧바로 웹 브라우저에 전송하는 것이 아닌 ___라고 불리는 곳에 임시로 응답 결과를 저장했다가 한 번에 웹 브라우저에 전송한다. 이것은 무엇인가?', 'Session(세션)', 'Cookie(쿠키)', 'lib(라이브러리)', 'buffer(출력버퍼)', 'buffer(출력버퍼)', 'JSP 페이지는 응답 결과를 출력버퍼(buffer)에 임시로 저장했다가 한 번에 웹 브라우저에 전송한다. 이 때 생기는 장점으로는 데이터 전송 성능 향상, JSP 실행 도중 버퍼를 비우고 새로운 내용 전송이 가능, 버퍼가 다 차기 전까지 헤더 변경 가능 등이 있다.');
+
+insert into chapter_4(no, question, example1, example2, example3, example4, answer, solution)  values (
+ch_4_seq.nextval, 'page 디렉티브는 buffer 속성을 제공하는데, 이 buffer 속성을 사용하면 JSP 페이지가 사용할 버퍼를 설정할 수 있다. 다음 중 옳지 않은 것을 고르시오.', 'JSP 페이지가 사용할 버퍼의 크기를 지정할 때 사용된다.', '사용할 버퍼의 크기를 지정하는 것은 선택사항이다.', 'buffer 속성 값에 단위를 붙이지 않으면 JSP페이지를 자바 코드로 변환하는 과정에서 에러가 발생한다.', '일반적으로 JSP 페이지를 작성할 때에는 buffer 속성을 지정하지 않는다.', '사용할 버퍼의 크기를 지정하는 것은 선택사항이다.', 'buffer 속성은 JSP 페이지가 사용할 버퍼의 크기를 지정할 때 사용하며, 킬로바이트 단위로 버퍼의 크기를 지정해줘야 한다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'page 디렉티브가 갖는 buffer 속성의 경우, 속성값을 none 으로 지정할 수 있는데, 다음 중 가장 틀린 설명을 고르시오.', 'buffer 속성 값을 none 으로 지정하면 JSP 페이지가 출력하는 내용을 buffer에 저장한 뒤 buffer가 다 차면 웹 브라우저에 출력한다.', 'buffer 속성 값을 none 으로 지정하면 JSP 페이지가 출력하는 내용을 곧바로 웹 브라우저로 전송한다.', 'buffer 속성의 값을 none 으로 지정하면 <jsp:forward> 기능을 사용할 수 없다.', 'buffer 속성 값을 none 으로 지정하는 경우는 거의 없다.', 'buffer 속성 값을 none 으로 지정하면 JSP 페이지가 출력하는 내용을 buffer에 저장한 뒤 buffer가 다 차면 웹 브라우저에 출력한다.', '버퍼를 사용하고 싶지 않다면 buffer 속성의 값을 none 으로 지정할 수 있지만, 이 경우 JSP 페이지가 출력하는 내용을 곧바로 웹 브라우저로 전송하기 때문에 여러 기능의 제약이 존재한다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'buffer가 다 찬 경우 buffer에 쌓인 데이터를 실제 전송되어야 할 곳(또는 저장되어야 할 곳)에 전송(또는 저장)하고 buffer를 비우게 되는데 이것을 ___(이)라고 부른다. 이것은 무엇인가?', 'flag', 'flash', 'flush', 'config', 'flush', '문제의 설명은 flush(플러시)에 대한 설명이다. page 디렉티브는 autoFlush 속성을 가지며 이는 true 또는 false 값을 갖는다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'page 디렉티브가 갖는 autoFlush 속성에 대한 설명 중 옳지 않은 것을 고르시오.', '이 속성은 true 또는 flase를 값으로 갖는다.', '속성 값이 true일 경우, buffer가 다 차면 buffer를 플러시하고 작업을 진행한다.', '속성 값이 false일 경우, buffer가 다 차면 익셉션을 발생시키고 작업을 중지한다.', 'autoFlush를 사용할 경우 <jsp:forward> 기능을 사용할 수 없다.', 'autoFlush를 사용할 경우 <jsp:forward> 기능을 사용할 수 없다.', '해당 보기는 autoFlush 속성에 대한 설명이 아니라 buffer 속성 값의 설명으로, page 디렉티브의 buffer 속성 값이 none 일 경우 <jsp:forward> 기능을 사용할 수 없다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, '다음 중 웹 어플리케이션을 WAS에 배포하는 방법으로 가장 알맞은 것은?', 'war 파일로 묶어서 배포한다.', 'web.xml 문서를 복사해 대상 폴더에 붙여넣기한다.', '로컬PC가 아닌 다른 컴퓨터의 폴더에 파일을 복사할 경우 FMT와 같은 기능을 이용해 배포한다.', 'Resource 폴더의 내부 파일을 복사해 대상 폴더에 붙여넣기한다.', 'war 파일로 묶어서 배포한다.', '웹 어플리케이션을 WAS에 배포하는 방법은 대상 폴더에 파이을 직접 복사하거나, war 파일로 묶어서 배포하는 방법이 있다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, 'request 기본 객체는 컨텍스트 경로를 제공하는 메서드를 정의하고 있다. 이 메서드는 다음 중 무엇인가?', 'request.getContext()', 'request.getContextPath()', 'request.getContextUrl()', 'request.getContextSystem()', 'request.getContextPath()', 'request 기본 객체가 갖고 있는 컨텍스트 경로를 제공하는 메서드는 request.getContextPath() 이다. 이 메서드를 사용하면 JSP가 포함된 웹 어플리케이션의 컨텍스트 경로를 구할 수 있다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, '서블릿/JSP로 구성된 웹 어플리케이션의 폴더와 그 하위폴더 중, 웹 어플리케이션에서 사용하는 jar 파일이 위치하는 파일은 다음 중 무엇인가?', 'WEB-INF\classes', 'WEB-INF\lib', 'Java Resources\Libraries', 'META-INF', 'WEB-INF\lib', '웹 어플리케이션에서 사용하는 jar 파일이 위치하는 폴더는 WEB-INF\lib 이다.');
+
+insert into chapter_4 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_4_seq.nextval, '서블릿 2.4/JSP2.0 규약은 ___ 파일을 반드시 포함하도록 제한하는데, 서블릿이나 리스너(Listener)를 직접 설정하는 경우나 특정 URL에 속하는 JSP들에 대해 공통 속성값을 설정하는 경우 ___ 파일을 작성해야 한다. 이 파일은 무엇인가?', 'MANIFEST.MF', 'index.html', 'index.jsp', 'web.xml', 'web.xml', '문제의 설명은 web.xml 파일에 대한 설명이다.');
+
+
+
+<  chapter_5 테이블 데이터  >
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '다음 중 JSP 가 제공하는 9가지 기본객체 중 하나가 아닌것은?', 'request', 'pageContext', 'out', 'Date', 'Date', 'JSP가 제공하는 9가지 기본객체 : request, response, pageContext, session, application, out, config, page, exception');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, 'JSP가 제공하는 기본객체 9가지 중, 8개의 기본객체는 모든 JSP 페이지에서 사용 가능하지만 ___ 기본객체는 오직 에러 페이지에서만 사용 가능하다. 이 객체는 무엇인가?', 'exception', 'config', 'application', 'out', 'exception', 'exception(익셉션) 기본 객체는 에러 페이지에서만 사용 가능하다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, 'JSP 페이지가 생성하는 모든 내용은 out 기본객체를 통해 전송된다. 다음 중 이 out 기본객체의 출력 메서드가 아닌것을 고르시오.', 'print()', 'printNext()', 'println()', 'newLine()', 'printNext()', 'printNext()는 out 기본객체의 출력 메서드가 아니다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '아래 보기는 out 기본 객체의 buffer 관련 메서드이다. 다음 중 메서드 이름과 기능이 옳지 않게 짝지어진것은?', 'getBufferSize() : 버퍼의 크기를 구한다.', 'getRemaining() : 현재 버퍼의 남은 크기를 구한다.', 'clear() : 버퍼 내용을 비운다.', 'flush() : 버퍼 내용을 비운 뒤 일시정지한다.', 'flush() : 버퍼 내용을 비운 뒤 일시정지한다.', 'flush() 메서드는 버퍼 내용을 플러시해서 내용을 클라이언트에 전송한다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, 'pageContext 기본객체는 JSP 페이지와 일대일로 연결된 객체이다. 다음 중 pageContext 객체가 제공하는 기능이 아닌것은?', 'import 객체 구하기', '속성 처리하기', '페이지 흐름 제어하기', '에러 데이터 구하기', 'import 객체 구하기', 'pageContext 기본 객체가 제공하는 기능은 import 객체가 아닌 기본 객체 구하기이다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '웹 어플리케이션을 위한 설정 정보를 담고 있는 파일로, JSP 프로그래밍을 할 때 이 파일이 꼭 필요한 것은 아니며 이 파일은 WEB-INF 폴더 내에 위치한다. 이 파일은 무엇인가?', 'MANIFEST.MF', 'index.html', 'index.jsp', 'web.xml', 'web.xml', '문제의 설명은 web.xml 파일에 대한 설명이다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, 'application 기본 객체는 현재 사용중인 웹 컨테이너에 대한 정보를 읽어오는 메서드를 제공한다. 다음 중 이에 해당하지 않는것은?', 'getServerInfo()', 'getContextPath()', 'getMajorVersion()', 'getMinorVersion()', 'getContextPath()', 'getContextPath() 메서드는 request 기본객체가 제공하는 메서드로, JSP가 포함된 웹 어플리케이션의 컨텍스트 경로를 구하는 메서드이다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '속성(Attribute)을 저장하기 위해 가장 많이 사용되는 기본 객체는 request, session 기본객체이다. 이 중에서도 ___ 패턴에 기반해 웹 어플리케이션을 개발할 떄 request 기본객체의 속성을 주로 사용한다. 이 패턴은 무엇인가?', 'VMC', 'WAS', 'MVC', 'DNS', 'MVC', 'MVC(Model View Controller)패턴이다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '웹 어플리케이션의 네 가지 영역(scope)은 PAGE, REQUEST, SESSION, APPLICATION 이 있다. 이들에 대한 설명 중 옳지 않은 것은?', '가장 범위가 큰 영역은 APPLICATION 이다.', '가장 범위가 작은 영역은 SESSION 이다.', '각 영역은 각각의 기본 객체를 갖는다.', '모든 JSP는 한개의 application 기본 객체를 공유한다.', '가장 범위가 작은 영역은 SESSION 이다.', '가장 범위가 작은 영역은 SESSION 이 아닌 PAGE 이다.');
+
+insert into chapter_5 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_5_seq.nextval, '네 개의 기본객체인 pageContext, request, session, application은 속성(Attribute)을 갖는다. 이 속성을 처리하는 메서드가 아닌것을 보기에서 고르시오.', 'setAttribute()', 'getAttribute()', 'clearAttribute()', 'getAttributeNames()', 'clearAttribute()', '속성을 삭제하는 메서드는 clearAttribute()가 아닌 removeAttribute() 이다.');
+
+
+
+<  chapter_6 테이블 데이터  >
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, 'JSP 실행 도중 익셉션이 발생할 떄 보여줄 JSP 페이지는 page 디렉티브의 ___ 속성을 사용해서 지정한다. 이 속성은 무엇인가?', '', 'pageContext', 'errorPage', 'isErrorPage', 'errorPage', '문제에서 설명한 기능은 page 디렉티브의 errorPage 속성을 이용한다.');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '주요 응답 상태 코드 중, 요청한 URL을 처리하기 위한 자원이 존재하지 않는 경우 전송되는 응답코드는?', '200', '307', '404', '500', '404', '해당파일을 찾지 못하는 경우 등에 전송되는 응답코드는 404이다.');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '주요 응답 상태 코드 중, 서버 내부에 에러가 발생한 경우 전송되는 응답코드는?', '200', '307', '404', '500', '500', '예를 들어 JSP 에서 익셉션이 발생하는 등의 경우 응답코드 500번이 전송된다.');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_6 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_6_seq.nextval, '', '', '', '', '', '', '');
+
+
+
+<  chapter_7 테이블 데이터  >
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, 'JSP 페이지의 화면 구성 요소의 코드 중복 문제를 해결하기 위해 사용할 수 있는 액션 태그는 무엇인가?', '<jsp:param>', '<jsp:include>', '<jsp:exclude>', '<jsp:forward>', '<jsp:include>', '<jsp:include> 액션 태그는 위치한 부분에 지정한 페이지를 포함시키는 태그이다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '<jsp:include> 액션 태그의 속성 중 포함할 JSP 페이지의 경로를 지정하는 속성은 무엇인가?', 'import', 'value', 'name', 'page', 'page', 'page 속성을 사용해 포함할 JSP 페이지의 경로를 지정한다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '<jsp:include> 액션 태그에 대한 설명 중 옳지 않은 것은?', '<jsp:include> 액션 태그는 포함할 JSP 페이지의 실행 결과를 현재 위치에 포함한다.', '<jsp:include> 액션 태그의 속성에는 page, flush가 있다.', 'flush 속성은 지정한 JSP 페이지를 실행하기 전에 출력 버퍼를 플러시할지 여부를 지정한다.', 'flush 속성값의 기본값은 true이다.', 'flush 속성값의 기본값은 true이다.', 'flush 속성이 true이면 출력 버퍼를 플러시하고 false이면 플러시하지 않는다. 기본값은 false이다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '<jsp:param> 태그에 관한 설명으로 옳지 않은 것은?', '<jsp:include> 액션 태그는 <jsp:param> 태그의 자식 태그이다.', '<jsp:param> 태그의 속성에는 name, value가 있다.', 'name 속성은 포함할 페이지에 새로 추가할 파라미터의 이름을 입력한다.', 'value 속성은 포함할 페이지에 새로 추가할 파라미터의 값을 입력한다.', '<jsp:include> 액션 태그는 <jsp:param> 태그의 자식 태그이다.', '<jsp:include> 액션 태그의 자식 태그로 <jsp:param> 태그가 추가되는 것이다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '<jsp:param> 액션 태그는 포함할 페이지에 전달할 요청 파라미터의 값을 인코딩하는 메서드가 필요하며, 이 메서드로 알맞은 캐럭터 셋을 지정하지 않으면 값이 올바르게 전달되지 못한다. 이 메서드는 무엇인가?', 'setCharacter()', 'setCharacterTo()', 'setCharacterEncoding()', 'setCharacterEncodingTo()', 'setCharacterEncoding()', 'request.setCharacterEncoding() 메서드에 지정하고자 하는 인코딩 값(ex. utf-8)을 넣어 사용한다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '<jsp:include> 액션 태그처럼 지정한 페이지를 현재 위치에 포함시키는 기능을 제공하는 또 다른 디렉티브로 포함하는 방식에서 차이가 있는 이 디렉티브는 무엇인가?', 'import', 'page', 'include', 'pageSet', 'include', '<jsp:include> 액션 태그는 다른 JSP로 실행 흐름을 이동시켜 실행 결과를 현재 위치에 포함하는 방식인 반면, include 디렉티브는 다른 파일의 내용을 현재 위치에 삽입한 후 JSP 파일을 자바 파일로 변환하고 컴파일하는 방식이다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, 'include 디렉티브에 대한 설명으로 옳지 않은 것은?', 'include 디렉티브의 file 속성은 포함할 파일의 경로를 지정한다.', '저작권 표시와 같이 모든 페이지에서 중복되는 간단한 문자으이 경우 include 디렉티브를 이용하면 편리하다.', 'include 디렉티브로 포함되는 JSP 파일의 확장자는 jspf를 사용하기도 한다.', 'jspf는 JSP File 의 약자이다.', 'jspf는 JSP File 의 약자이다.', 'jspf는 JSP Fragment 의 약자로, JSP의 소스 코드 조각을 의미한다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '하나의 JSP 페이지에서 다른 JSP 페이지로 요청 처리를 전달할 때 사용하는 액션 태그는 무엇인가?', '<jsp:include>', '<jsp:param>', '<jsp:forward>', '<jsp:page>', '<jsp:forward>', '<jsp:forward> 액션 태그를 이용하면 요청 처리를 하나의 JSP 에서 다른 JSP로 전달하게 된다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, 'os에 상관 없이 절대경로나 상대경로를 통해 경로를 구분할 때 사용하는 기오는 무엇인가?', '/', '\', '://', '?', '/', '../to/to.jsp 와 같이 경로를 구분할 때에는 / 를 사용한다.');
+
+insert into chapter_7 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_7_seq.nextval, '다음 중 JSP 가 제공하는 액션 태그가 아닌것을 고르시오.', 'include', 'forward', 'setProperty', 'resetProperty', 'resetProperty', 'resetProperty는 JSP가 제공하는 액션 태그가 아니다.');
+
+
+
+<  chapter_8 테이블 데이터  >
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, 'JSP 기반 웹 어플리케이션에서 정보를 표현할 때 사용하는 것 중 하나가 자바빈(Java Beans)이다. 자바빈에 대한 설명으로 옳지 않은 것은?', '자바빈은 속성(데이터), 변경 이벤트, 객체 직렬화를 위한 표준이다.', 'JSP에서는 속성을 표현하기 위한 용도로 자바빈을 사용한다.', '자바빈 규약을 따르는 클래스를 인터페이스라고 부른다.', 'JSP에서 데이터를 보여줄 때 일반적으로 자바빈과 같은 클래스에 담아서 값을 보여준다.', '자바빈 규약을 따르는 클래스를 인터페이스라고 부른다.', '자바빈 규약을 따르는 클래스를 인터페이스가 아닌 자바빈이라 부른다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '다음은 자바빈(Java Beans)의 프로퍼티에 대한 설명이다. 다음 중 옳지 않은 것은?', '프로퍼티는 자바빈에 저장되는 값을 저장하는 파라미터를 뜻한다.', '프로퍼티 이름은 필드 이름과 동일하지 않아도 무방하다.', '프로퍼티 타입이 boolean일 경우 get 대신에 is를 붙일 수 있다.', '프로퍼티 값에는 읽기 전용 프로퍼티와 읽기/쓰기 전용 프로퍼티가 존재한다.', '프로퍼티는 자바빈에 저장되는 값을 저장하는 파라미터를 뜻한다.', '프로퍼티란 자바빈에 저장되는 값을 나타내며, 메서드 이름을 사용해서 프로퍼티의 이름을 결정하게 된다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '다음은 컴파일할 때 사용되는 옵션과 그에 대한 설명이다. 이 중 옳지 않은 것을 고르시오.', '-encoding : 소스 코드의 인코딩을 지정한다.', '-d : 컴파일 결과로 생성될 클래스 파일의 위치를 지정한다.', '-cp : 컴파일할 경로를 지정한다.', '-source : 소스 코드의 자바 버전을 지정한다.', '-cp : 컴파일할 경로를 지정한다.', '-cp 라는 옵션은 컴파일할 때 사용할 클래스패스를 지정하는 옵션이다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '다음 중 <jsp:useBean> 액션 태그와 관련된 설명으로 옳지 않은 것을 고르시오.', '<jsp:useBean> 액션 태그는 JSP 페이지에서 사용할 자바빈 객체를 지정할 때 사용한다.', 'id 속성은 JSP 페이지에서 자바빈 객체에 접근할 때 사용할 이름을 지정한다.', 'class 속성은 패키지 이름을 포함한 자바빈 클래스의 완전한 이름을 입력한다.', 'scope 속성은 자바빈 객체의 타입을 지정한다.', 'scope 속성은 자바빈 객체의 타입을 지정한다.', 'scope 속성은 자바빈 객체를 저장할 영역을 지정한다. page, request, session, application 중 하나를 값으로 가지며 기본값은 page이다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '<jsp:useBean> 액션 태그에 대해 옳지않은 설명을 고르시오.', '지정한 영역에 이미 id속성에서 지정한 이름의 속성값이 존재하면 객체생성 없이 기존객체를 그대로 사용한다.', 'scope 속성값에 따라 객체는 서로다른 기본객체에 저장된다.', 'class속성 대신 name속성을 사용할 수 있다.', '자바빈 객체를 생성할 수 있다.', 'class 속성 대신에 name 속성을 사용할 수 있다.', '<jsp:useBean> 액션 태그의 class 속성 대신에 type 속성을 사용할 수 있다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '<jsp:setProperty> 액션 태그에 대한 설명으로 옳지 않은 것은?', '생성한 자바빈 객체의 프로퍼티 값을 변경할 때 사용한다.', 'name 속성은 <jsp:useBean> 액션 태그의 name 속성에서 지정한 값을 사용한다.', 'property 속성은 값을 지정할 프로퍼티의 이름을 지정하는 속성이다.', 'value 속성은 프로퍼티의 값을 지정하는 속성이다.', 'name 속성은 <jsp:useBean> 액션 태그의 name 속성에서 지정한 값을 사용한다.', 'name 속성은 프로퍼티의 값을 변경할 자바빈 객체의 이름을 지정하는 속성으로, <jsp:useBean> 액션 태그의 id 속성에서 지정한 값을 사용한다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '다음의 보기 중 옳지 않은 설명을 고르시오.', '<jsp:setProperty> 액션 태그에서 value 속성에서 프로퍼티 값 지정은 표현식, EL 태그를 사용할 수 있다.', '<jsp:setProperty> 액션 태그에서 value 속성 대신 param 속성을 사용할 수 있다.', '<jsp:setProperty> 액션 태그에서 param 속성은 파라미터 값을 가져올 때 사용한다.', '<jsp:setProperty> 액션 태그에서 property 속성 값을 * 로 지정하면 자동 매핑이 된다.', '<jsp:setProperty> 액션 태그에서 param 속성은 파라미터 값을 가져올 때 사용한다.', '<jsp:setProperty> 액션 태그에서 param 속성은 파라미터 값을 프로퍼티 값으로 지정할 때 사용한다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '<jsp:getProperty> 액션 태그에 대한 설명으로 옳지 않은 것은?', '이 액션 태그는 자바빈 객체의 프로퍼티 값을 출력할 때 사용된다.', 'name 속성은 <jsp:useBean> 의 id 속성에서 지정한 자바빈 객체의 이름을 지정한다.', 'property 속성은 출력할 프로퍼티의 이름을 지정한다.', '<jsp:getProperty> 액션태그에서 value 속성의 기본값은 0 이다.', '<jsp:getProperty> 액션태그에서 value 속성의 기본값은 0 이다.', '<jsp:getProperty> 액션태그에서는 value 속성을 사용하지 않는다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, '자바빈 프로퍼티에 타입에 따라 값이 자동으로 매핑되는데 프로퍼티 이름과 기본값이 잘못 짝지어진 것을 고르시오.', 'boolean - true', 'byte - 0', 'int - 0', 'float - 0.0f', 'boolean - true', 'boolean 타입은 기본값이 false 이다.');
+
+insert into chapter_8 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_8_seq.nextval, 'JSP 만을 이용해서 웹 어플리케이션을 구현해야 하는 경우, 간단하게 파라미터 값을 빈 백체에 복사하기 위한 용도로 ____ 액션 태그를 사용하곤 한다. 이것은 무엇인가?', '<jsp:include>', '<jsp:useBean>', '<jsp:setProperty>', '<jsp:getProperty>', '<jsp:useBean>', '문제에서 설명하는 액션태그는 <jsp:useBean> 액션 태그이다.');
+
+
+
+<  chapter_9 테이블 데이터  >
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '웹 서버에서 사용되는 쿠키(Cookie)에 대한 설명으로 옳지 않은것은?', '웹 서버는 쿠키(Cookie)를 이용해서 웹 브라우저에 정보를 전송할 수 있다.', '쿠키는 웹 서버에서만 생성 가능하다.', 'JSP 에서 생성하는 쿠키는 웹 서버에서 생성하는 쿠키이다.', '쿠키는 웹 브라우저가 보관하는 데이터이다.', '쿠키는 웹 서버에서만 생성 가능하다.', '쿠키는 웹 서버와 웹 브라우저 양쪽에서 생성할 수 있다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '다음 중 쿠키가 동작하는 방식을 설명할 수 있는, 쿠키의 구성 단계에 해당하지 않는 것을 고르시오.', '쿠키 준비 단계', '쿠키 생성 단계', '쿠키 저장 단계', '쿠키 전송 단계', '쿠키 준비 단계', '쿠키 준비 단계는 포함되지 않는다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '다음 중 쿠키의 구성 요소가 아닌 것을 고르시오.', '이름', '값', '유효시간', '대기시간', '대기시간', '쿠키를 구성하는 요소는 이름, 값, 유효시간, 도메인, 경로이다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '다음 중 쿠키에 대한 설명으로 옳지 않은 것을 고르시오.', '각 쿠키는 값을 가지며 서버는 이 값을 사용해 원하는 작업을 수행한다.', '쿠키의 핵심 요소는 이름과 값이다.', '하나의 웹 브라우저는 여러 개의 쿠키를 가질 수 있다.', '쿠키 값은 ( 또는 ) 등의 문자를 포함할 수 있다.', '쿠키 값은 ( 또는 ) 등의 문자를 포함할 수 있다.', 'RFC2965 규약에 따르면 쿠키 값은 ( 또는 ) 등의 문자를 포함할 수 없다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '쿠키를 사용할 떄 가장 먼저 쿠키 객체를 생성한 뒤, request 객체가 가진 ____ 메서드를 사용해서 쿠키를 추가한다. 이 메서드는 무엇인가?', 'createCookie()', 'initCookie()', 'makeCookie()', 'addCookie()', 'addCookie()', '해당 문제는 addCookie() 메서드에 대한 설명이다. response.addCookie() 메서드를 사용하면 response 기본 객체는 웹 브라우저에 쿠키 정보를 전송한다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, 'Cookie 클래스가 제공하는 메서드 중, 쿠키의 전송 경로를 구하는 메서드는 무엇인가?', 'getName()', 'getValue()', 'getDomain()', 'getPath()', 'getPath()', 'getPath() 메서드를 이용하며, 리턴 타입은 String 이다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, 'Cookie 클래스가 제공하는 메서드 중, 쿠키 값을 구하는 메서드는 무엇인가?', 'getName()', 'getValue()', 'getDomain()', 'getPath()', 'getValue()', 'getValue() 메서드를 이용하며, 리턴타입은 String 이다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, 'Cookie 클래스가 제공하는 메서드 중, 쿠키 이름을 구하는 메서드는 무엇인가?', 'getName()', 'getValue()', 'getDomain()', 'getPath()', 'getName()', 'getName() 메서드를 이용하며, 리턴 타입은 String 이다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, 'Cookie 클래스가 제공하는 메서드 중, 쿠키의 도메인을 구하는 메서드는 무엇인가?', 'getName()', 'getValue()', 'getDomain()', 'getPath()', 'getDomain()', 'getDomain() 메서드를 이용하며, 리턴 타입은 String 이다.');
+
+insert into chapter_9 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_9_seq.nextval, '일반적으로 쿠키는 웹 어플리케이션에 포함된 다수의 JSP와 서블릿에서 사용하기 떄문에, 쿠키 경로를 __ 으로 지정한다.', '/', '\', '()', '://', '/', '/을 이요해 쿠키 경로를 지정한다. (ex. /chap09/path1/viewCookie.jsp)');
+
+
+
+<  chapter_10 테이블 데이터  >
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '다음 중 세션(Session)에 대한 설명으로 옳지 않은 것은?', '서버 세션을 사용하면 클라이언트의 상태를 저장할 수 있다.', '쿠키와의 차이점은 세션은 웹 서버에 값을 저장한다는 점이다.', '웹 컨테이너는 기본적으로 한 웹 브라우저마다 한 세션을 생성한다.', '세션은 웹 브라우저와 관련된 정보를 저장하기에 알맞은 장소이다.', '쿠키와의 차이점은 세션은 웹 서버에 값을 저장한다는 점이다.', '쿠키와의 차이점은 세션은 웹 브라우저가 아닌 서버에 값을 저장한다는 점이다.');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, 'JSP 에서 세션을 생성하려면 page 디렉티브의 session 속성을 ___ 로 지정하면 된다.', 'true', 'false', '0', 'none', 'true', '(해설 없음)');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, 'session 기본 객체가 제공하는 세션 정보 관련 메서드가 아닌 것은?', 'getId()', 'getPass()', 'getCreationTime()', 'getLastAccessedTime()', 'getPass()', 'getPass()은 session 기본 객체가 제공하는 세션 정보 관련 메서드가 아니다.');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '다음 중 세션에 대한 설명으로 옳지 않은 것은?', '한 번 생성된 세션은 계속해서 유지된다.', '세션에 값을 저장할 때는 속성을 사용한다.', '속성에 값을 저장할 땐 setAttribute() 메서드를 사용한다.', '속성값을 읽을 땐 getAttribute() 메서드를 사용한다.', '한 번 생성된 세션은 계속해서 유지된다.', '한 번 생성된 세션은 지정한 유효 시간 동안 유지된다.');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '쿠키와 세션을 비교한 보기 중 옳지 않은 것은 무엇인가?', '쿠키 대신 세션을 사용하는 가장 큰 이유는 세션이 쿠키보다 보안이 앞서기 때문이다.', '쿠키와 다르게 세션은 쿠키 설정 여부에 관계 없이 사용할 수 있다.', '세션은 여러 서버에서 공유할 수 있다.', '쿠키는 여러 도메인 주소에서 공유할 수 있다.', '세션은 여러 서버에서 공유할 수 있다.', '세션은 여러 서버에서 공유할 수 없다.');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '세션을 유지할 필요가 없을 때 ____ 메서드를 사용해서 세션을 종료한다. 이 메서드는 무엇인가?', 'invalidate()', 'remover()', 'close()', 'distinctAssoiciate()', 'invalidate()', 'session.invalidate() 메서드를 사용해 세션을 종료하며, 세션을 종료하면 현재 사용 중인 session 기본 객체를 삭제하고 session 기본 객체에 저장했던 속성 목록도 함께 삭제한다.');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, 'HttpSession을 이용하는 또 다른 방법으로, request 기본 객체가 갖는 _____ 메서드를 이용하는 방법이 있다. 이 메서드는 무엇인가?', 'getSession()', 'createSession()', 'initSession()', 'Session()', 'getSession()', '(해설 없음)');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '세션의 유효기간을 지정하는 session 기본 객체가 제공하는 메서드는 무엇인가?', 'getLastAccessedTime()', 'getCreationTime()', 'setMaxInactiveInterval()', 'getAttribute()', 'setMaxInactiveInterval()', '(해설 없음)');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '세션에 여러 속성을 사용해서 연관 정보들을 저장할 때 발생할 수 있는 문제점을 줄이는 방법은 ___ 를 사용하는 것이다. 이것은 무엇인가?', '클래스', '메서드', '기본생성자', '구현', '클래스', '(해설 없음)');
+
+insert into chapter_10 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_10_seq.nextval, '로그인과 로그아웃에서, 로그아웃을 처리할 때 사용할 수 있는 session 메서드는 무엇인가?', 'setAttribute()', 'invalidate()', 'close()', 'excitSession()', 'invalidate()', '(해설 없음)');
+
+
+
+<  chapter_11 테이블 데이터  >
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '____ 란 값을 표현하는 데 사용하는 스크립트 언어로, JSP의 스크립트 요소를 보완하는 역할을 한다. 이것은 무엇인가?', '표준 태그', '표현 언어', '표현 태그', '액션 태그', '표현 언어', '문제는 표현 언어(Expression Language)에 대한 설명이다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 옳지 않은 것을 고르시오.', '표현언어를 사용하면 JSP 표현식을 사용하는 것보다 간결한 코드를 사용해 값을 출력할 수 있다.', '표현언어는 수치연산, 관계연산, 논리연산자를 제공한다.', '표현언어는 값을 표현하는 역할은 하지만 스크립트 언어는 아니다.', '표현언어를 짧게는 EL 이라고 부른다.', '표현언어는 값을 표현하는 역할은 하지만 스크립트 언어는 아니다.', '표현 언어는 값을 표현하는데 사용하는 스크립트 언어로 JSP의 스크립트 요소를 보완하는 역할을 한다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, 'EL을 통해 값을 표현하는 방법은 다음 중 무엇인가?', '!{}', '@{}', '#{}', '${}', '${}', '${expr} 과 같이 사용한다. expr 부분에는 표현 언어가 정의한 문법에 따라 값을 표현하는 식이 온다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 EL 에 대한 설명에서 옳지 않은 것을 고르시오.', '액션 태그와 커스텀 태그에서 사용 가능하다.', '비스크립트 요소 부분에서는 사용에 제약이 있다.', 'JSP의 스크립트 요소를 제외한 나머지 부분에서 사용될 수 있다.', '실제 프로젝트에서는 표현식보다 표현 언어를 사용한다.', '비스크립트 요소 부분에서는 사용에 제약이 있다.', '액션 태그, 커스텀 태그 뿐 아니라 비스크립트 요소 부분에서도 값을 출력하기 위해 사용할 수 있다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '#{  } 태그에 대한 설명 중 옳지 않은 것은?', 'Deferred Expression 이라고 부른다.', '이 형식의 EL은 실제 값이 필요할 때 계산을 수행한다.', 'JSP의 템플릿 텍스트에서도 사용 가능하다.', '이 형식의 EL은 Deferred Expression을 허용하는 태그의 속성에만 위치할 수 있다.', 'JSP의 템플릿 텍스트에서도 사용 가능하다.', '#{ }은 곧바로 값이 생성되는 것이 아니기 때문에 JSP의 템플릿 텍스트에서도 사용할 수 없다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 EL이 제공하는 5가지 타입에 속하는 것이 아닌것은?', 'boolean', 'varchar2', '정수', '실수', 'varchar2', 'EL이 제공하는 5가지 데이터 타입은 boolean 타입, 정수 타입, 실수 타입, 문자열 타입, 널(null) 타입의 다섯가지이다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 EL 에서 사용할 수 있는 기본 객체에 속하지 않는 것은?', 'setPath', 'pageContext', 'pageScope', 'param', 'setPath', 'setPath는 기본 객체가 아닌 경로를 구하는 메서드이다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 수치 연산자에 속하지 않는 것은 무엇인가?', '*', '/', '\', '%', '\', '수치 연산자에는 + 연산자, - 연산자, * 연산자, / 또는 div, % 또는 mod, - 단항 연산자의 6가지가 존재한다.');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '<수식> ? <값1> : <값2> 와 같은 형태를 하는 연산자를 무엇이라고 부르는가?', 'switch문', 'for문', '비교 선택 연산자(삼항연산자)', 'while문', '비교 선택 연산자(삼항연산자)', '(해설 없음)');
+
+insert into chapter_11 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_11_seq.nextval, '다음 중 EL 에서 제공하는 API에 대한 설명으로 옳지 않은 것은?', 'steam() : EL 스트림 객체를 생성한다.', 'sorted() : 스트림을 정렬한다.', 'filter() : 값을 가져온다.', 'map() : 원소를 변환한 새로운 스트림을 생성한다.', 'filter() : 값을 가져온다.', 'filter()는 값을 걸러낼 때 사용한다. 이 메서드는 람다식을 파라미터로 갖는다. 이 람다식은 한 개의 파라미터를 갖고 결과로 boolean을 리턴한다.');
+
+
+
+
+<  chapter_12 테이블 데이터  >
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_12 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_12_seq.nextval, '', '', '', '', '', '', '');
+
+
+
+
+<  chapter_13 테이블 데이터  >
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_13 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_13_seq.nextval, '', '', '', '', '', '', '');
+
+
+
+
+<  chapter_14 테이블 데이터  >
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
+
+insert into chapter_14 (no, question, example1, example2, example3, example4, answer, solution) values (
+ch_14_seq.nextval, '', '', '', '', '', '', '');
